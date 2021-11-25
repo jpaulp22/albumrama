@@ -178,7 +178,7 @@ h2{
 }
 
 /* each user grid item */
-.ugriditem{
+#ugriditem{
   height: 174px;
   box-shadow: 15px 15px 22px -4px #0d0106;
 }

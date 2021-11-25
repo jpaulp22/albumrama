@@ -62,7 +62,7 @@ $(function() {
   //appends album chosen to user grid
   $("#searchgrid").on("click", "#grid-item img", function(){
     let chosensrc = $(this).attr('src'); //get source of selected album
-    let gridentries = document.querySelectorAll("#ugriditem img"); //array of images
+    let gridentries = document.querySelectorAll(".ugriditem img"); //array of images
     for(let i = 0 ; i < 10 ; i++)
       {
         if(gridentries[i].className == "placeholder")

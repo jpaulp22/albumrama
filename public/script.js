@@ -1,11 +1,11 @@
 $(function() {
   
   //allow user to use Enter key to search
-    $("#search").keyup(function(e){
-      if (e.key == "Enter"){
-        $("#album-search").click();
-      }
-    })
+  $("#search").keyup(function(e){
+    if (e.key == "Enter"){
+      $("#album-search").click();
+    }
+  })
   
   //album search function
   $('#album-search').click(function() {
@@ -88,6 +88,20 @@ $(function() {
         gridentries[i].className = "placeholder";
         gridentries[i].src = "images/onpage_images/album.png";
       }
+  })
+  
+  //change log modal
+  let mymodal = $("#update-log");
+  $("#changelogtxt").click(function(){
+    mymodal.css("display","block");
+  })
+  
+  $("#close").click(function(){
+    mymodal.css("display", "none");
+  })
+  
+  mymodal.click(function(){
+    mymodal.css("display","none");
   })
   
   /*

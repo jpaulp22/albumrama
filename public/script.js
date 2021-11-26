@@ -75,14 +75,14 @@ $(function() {
   })
   
   //remove a chosen album
-  $("#ugriditem img").click(function() {
-    $(this).attr("src", "album.png");
+  $(".ugriditem img").click(function() {
+    $(this).attr("src", "images/onpage_images/album.png");
     $(this).attr("class", "placeholder");
   })
   
   //reset grid
   $("#reset").click(function() {
-    let gridentries = document.querySelectorAll("#ugriditem img")
+    let gridentries = document.querySelectorAll(".ugriditem img")
     for(let i = 0 ; i < 10 ; i++)
       {
         gridentries[i].className = "placeholder";

@@ -183,9 +183,27 @@ h2{
   box-shadow: 15px 15px 22px -4px #0d0106;
 }
 
+/* download container */
+#download-cont{
+  text-align: center;
+}
+
+/* actual download button */
+#download{
+  font-size: 50px;
+  height: 70px;
+  width: 180px;
+  padding: 10px;
+  background: #eaf8bf;
+  border: 1px solid #eaf8bf;
+  color: #006992;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 /* search section container */
 #searchsection{
-  margin: 120px auto 0 auto;
+  margin: 50px auto 0 auto;
   width: 1030px;
   display: flex;
   height: 80px;

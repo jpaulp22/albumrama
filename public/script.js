@@ -104,17 +104,13 @@ $(function() {
     mymodal.css("display","none");
   })
   
-  /*
   //download grid
-  $("#dnld").click(function() {
-      html2canvas(document.getElementById("usergrid")).then(canvas =>{
+  $("#download").click(function() {
+      html2canvas(document.getElementById("usergrid"),{useCORS:true, backgroundColor:null}).then(canvas =>{    
         let anchorTag = document.createElement("a");
-        document.body.appendChild(anchorTag);
-        document.getElementById("usergrid").appendChild(canvas);
-        anchorTag.download = "yourgrid.jpg";
         anchorTag.href = canvas.toDataURL();
-        anchorTag.target = '_blank';
-        anchorTag.click();
+        anchorTag.download = "yourgrid.png";
+        anchorTag.click();       
       })
-  });*/
+  });
 })

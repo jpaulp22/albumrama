@@ -1,6 +1,6 @@
 require("dotenv").config();
 const axios = require("axios");
-//const cors = require("cors");
+const cors = require("cors");
 const express = require("express");
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-//app.use(cors());
+app.use(cors());
 
 app.listen(port, function() {
   console.log('App is running on port: ' + port);

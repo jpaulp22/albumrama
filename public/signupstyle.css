@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* set body */
+body{
+  background-color: #0d0106;
+  width: 94%;
+  margin: auto;
+}
+
+/* strip link decoration */
+a{
+  text-decoration: none;
+  color: #0d0106
+}
+
+a:visited{
+  color: #0d0106
+}
+
+
+
+/* home container style */
+#home{
+  margin: -20px 0 0 0;
+}
+
+/* nav style */
+#navbar{
+  font-family: 'Poiret One', sans-serif;
+  font-size: 2rem;
+}
+
+/* logo container style */
+#logo-cont{
+  width: 30%;
+  margin: 25px 0 0 0;
+  float: left;
+}
+
+/* logo image style */
+#albu-logo{
+  width: 290px;
+}
+
+
+
+#signin-cont{
+  padding: 250px 0 0 0;
+  width: 70%;
+  margin: auto;
+  font-family: 'Mulish', sans-serif;
+}
+
+#second-cont{
+  background-color: #eaf8bf;
+  padding: 50px 50px 50px 50px;
+  border-radius: 60px;
+}
+
+#headercont{
+  font-size: 1.4rem;
+  color: #0d0106;
+}
+
+form > input{
+  display: block;
+  font-size: 25px;
+  margin: 20px 0 20px 0;
+  outline: none;
+  text-indent: 5px;
+  background-color: #eaf8bf;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  color: #0d0106;
+}
+
+#register{
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  color: #eaf8bf;
+  padding: 15px 45px 15px 45px;
+  margin: 0 0 20px 0;
+  background-color: #006992;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+#newmemb-cont{
+  font-size: 1.2rem;
+}

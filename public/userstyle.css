@@ -1,0 +1,133 @@
+/* reset browser */
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* set body */
+body{
+  background-color: #0d0106;
+  width: 94%;
+  margin: auto;
+}
+
+/* strip link decoration */
+a{
+  text-decoration: none;
+}
+
+
+
+/* home container style */
+#home{
+  margin: -20px 0 0 0;
+}
+
+/* nav style */
+#navbar{
+  font-family: 'Poiret One', sans-serif;
+  font-size: 2rem;
+}
+
+/* logo container style */
+#logo-cont{
+  width: 30%;
+  margin: 25px 0 0 0;
+  float: left;
+}
+
+/* logo image style */
+#albu-logo{
+  width: 290px;
+}
+
+#list-holder{
+  width: 70%;;
+  margin: 58px 0 11px 0;
+  float: right;
+}
+
+/* list style */
+#nav-links{
+  list-style: none;
+}
+
+/* link container style */
+#nav-links > li{
+  float: right;
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 100px;
+}
+
+li > a{
+  color: #eaf8bf;
+}
+
+#myaccount-btn, #logout{
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+  color: #eaf8bf;
+  padding: 5px 15px 5px 15px;
+  background-color: #006992;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+#second-cont{
+  padding: 250px 0 0 0;
+}
+
+/* header */
+h1{
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  color: #eaf8bf
+}
+
+
+
+/* usergrid container style */
+#usergrid{
+  display: grid;
+  grid-template-columns: repeat(5, 174px);
+  grid-gap: 20px;
+  padding: 50px 0 50px 0;
+  margin: 60px auto 60px auto;
+  width: 1030px;
+  background-color: #eaf8bf;
+  border-radius: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* each user grid item */
+#ugriditem{
+  height: 174px;
+  box-shadow: 15px 15px 22px -4px #0d0106;
+}
+
+#nogrid-cont{
+  color: #eaf8bf;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4rem;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+p > a{
+  border-bottom: .05em solid #eaf8bf;
+}
+
+p > a:visited{
+  color: #eaf8bf;
+}
+
+#logout-cont{
+  text-align: center;
+  padding: 50px 0 50px 0;
+}

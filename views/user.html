@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="User account where you can find your saved grids">
+    <meta name="author" content="Jean Paul Perez">
+    <link href="userstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favs/favicon-16x16.png">
+    <link rel="manifest" href="images/favs/manifest.json">
+    <meta name="theme-color" content="#eaf8bf">
+    <meta name="msapplication-TileColor" content="#0d0106">
+    <meta name="msapplication-TileImage" content="images/favs/ms-icon-144x144.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="userscript.js"></script>
+  </head>
+  
+  <body>
+    <div id="container">
+      <div id="home">
+      <nav id="navbar">
+          <!-- Logo -->
+          <div id="logo-cont">
+            <div id="img-cont">
+              <a href="/portal"><img src="images/logos/albumrama-335px-110px.png" alt="albumrama logo" id="albu-logo"></a>
+            </div>
+          </div>
+          <div id="list-holder">
+            <!-- Links -->
+            <ul id="nav-links">
+              <li><button id="myaccount-btn" onclick="window.location.href='/user'">My Account</button></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="userinfo-cont">
+        <div id="second-cont">
+          <div id="header-cont">
+            <h1>Your Past Grids</h1>
+          </div>
+          <div id="existing-grids-cont"></div>
+          <div id="logout-cont"><button id="logout" title="Logout" onclick="window.location.href='/signout'">Logout</button></div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>

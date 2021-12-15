@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Albumrama</title>
+    <title>Albumrama-Logged In</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="10 image collage generator using Last.fm API to find albums you search for">
     <meta name="author" content="Jean Paul Perez">
-    <link href="style.css" rel="stylesheet">
+    <link href="portalstyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favs/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favs/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favs/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favs/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favs/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favs/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favs/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favs/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favs/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favs/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favs/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favs/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favs/favicon-16x16.png">
-    <link rel="manifest" href="images/favs/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favs/favicon-16x16.png">
+    <link rel="manifest" href="../images/favs/manifest.json">
     <meta name="theme-color" content="#eaf8bf">
     <meta name="msapplication-TileColor" content="#0d0106">
-    <meta name="msapplication-TileImage" content="images/favs/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="../images/favs/ms-icon-144x144.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <script src="script.js"></script>
-    <script src="html2canvas.js"></script>
+    <script src="../portalscript.js"></script>
   </head>
 
   <body>
@@ -45,12 +44,13 @@
           <!-- Logo -->
           <div id="logo-cont">
             <div id="img-cont">
-              <a href="index.html"><img src="images/logos/albumrama-335px-110px.png" alt="albumrama logo" id="albu-logo"></a>
+              <a href="portal.html"><img src="images/logos/albumrama-335px-110px.png" alt="albumrama logo" id="albu-logo"></a>
             </div>
           </div>
           <div id="list-holder">
             <!-- Links -->
             <ul id="nav-links">
+              <li><button id="loggedin-btn" onclick="window.location.href='user'">My Account</button></li>
               <li><a href="#about" title="About">About</a></li>
               <li><a href="#collage" title="Collage">Collage</a></li>
               <li><a href="#home" title="Home">Home</a></li>
@@ -60,10 +60,10 @@
       </div>
       <!-- Main Greeting -->
       <div id="main-header">
-        <div id="collage-excont"><img src="images/onpage_images/albumexample.png" alt="example collage on yellow circle background" id="ex-collage"></div>
+        <div id="collage-excont"><img src="../images/onpage_images/albumexample.png" alt="example collage on yellow circle background" id="ex-collage"></div>
         <div id="hello">
           <div id="hook"><h1>The Collage Maker of Your Dreams.</h1></div>
-          <div id="extra"><h2>Just search, click, and repeat.</h2></div>
+          <div id="extra"><h2>Just search, click, and repeat. Sign up to save your collages.</h2></div>
           <div id="collcont-btn"><button id="coll-btn" onclick="window.location.href='#collage'">Start</button></div>
         </div>
       </div>
@@ -85,19 +85,24 @@
       <!-- Collage -->
       <div id="collage">
         <div id="usergrid">
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
-          <div class="ugriditem"><img src="images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
+          <div class="ugriditem"><img src="../images/onpage_images/album.png" alt="placeholder image" class="placeholder"></div>
         </div>
-        <div id="download-cont">
-          <button id="download" title="Download"><i class="fa fa-download"></i></button>
+        <div id="user-options-cont">
+          <div id="download-cont">
+            <button id="download" title="Download"><i class="fa fa-download"></i></button>
+          </div>
+          <div id="save-cont">
+            <button id="save" title="Save"><i class="fa fa-plus"></i></button>
+          </div>
         </div>
         <div id="searchsection">
           <input id="search" name="artalbname" placeholder="The Cure, Salad Days, ... ">
@@ -114,7 +119,7 @@
       <!-- About -->
       <div id="about">
         <div id="abt-img-cont">
-          <img src="images/onpage_images/aboutpic.png" alt="Jean Paul Perez" id="aboutimg">
+          <img src="../images/onpage_images/aboutpic.png" alt="Jean Paul Perez" id="aboutimg">
         </div>
         <div id="abt-excerpt-cont">
           <p id="aboutme">Created by Jean Paul Perez. Web designer, musician, vlogger. Find out more below.</p>
@@ -130,10 +135,14 @@
         <div id="modal-content">
           <span id="close">&times;</span>
           <div id="modal-txt">
-            <h2>Release 1.1</h3>
+            <h2>Release 1.2</h3>
             <ul>
-                <li>Download feature added</li>
-              </ul>
+              <li>Download feature added</li>
+              <li>User account feature added, now you can sign up</li>
+              <li>Save feature added -- only available to registered users</li>
+              <li>Registered users can see their past grids on account page</li>
+              <li>Added password hashing for account security</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -80,7 +80,7 @@ li > a:hover::after{
   right: 0;
 }
 
-#signin-btn{
+#loggedin-btn{
   font-family: 'Mulish', sans-serif;
   font-size: 2rem;
   color: #eaf8bf;
@@ -91,7 +91,6 @@ li > a:hover::after{
   cursor: pointer;
   margin-top: -5px;
 }
-
 
 
 /* main header style */
@@ -210,13 +209,21 @@ h2{
   box-shadow: 15px 15px 22px -4px #0d0106;
 }
 
+/*options grid*/
+#user-options-cont{
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+  align-items: center;
+}
+
 /* download container */
-#download-cont{
+#download-cont, #save-cont{
   text-align: center;
 }
 
 /* actual download button */
-#download{
+#download, #save{
   font-size: 50px;
   height: 70px;
   width: 180px;

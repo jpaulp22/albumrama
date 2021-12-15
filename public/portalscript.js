@@ -111,4 +111,20 @@ $(function() {
         anchorTag.click();       
       })
   });
+  
+  //save grid
+  $("#save").click(function(){
+    let exportedgrid = [];
+    let gridentries = document.querySelectorAll(".ugriditem img");
+    for(let i = 0 ; i < 10 ; i++)
+      {
+        let source = gridentries[i].src;
+        exportedgrid.push(source);
+      }
+    $.ajax({
+      type: "POST",
+      url: '/save',
+      data: {userArray : exportedgrid}
+    })
+  })
 })

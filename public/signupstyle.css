@@ -93,3 +93,36 @@ form > input{
 #newmemb-cont{
   font-size: 1.2rem;
 }
+
+@media (max-width: 992px){
+  #signin-cont{
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px){
+  #albu-logo{
+    width: 200px;
+    margin: 20px 0 0 0;
+  }
+
+  #second-cont{
+    padding: 50px 50px 50px 50px;
+  }
+
+  #headercont{
+    font-size: 1rem;
+  }
+
+  form > input{
+    font-size: 17px;
+  }
+
+  #login{
+    font-size: 1.2rem;
+  }
+
+  #newmemb-cont{
+    font-size: 1rem;
+  }
+}

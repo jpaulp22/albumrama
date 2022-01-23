@@ -43,7 +43,7 @@ a{
 }
 
 #list-holder{
-  width: 70%;;
+  width: 70%;
   margin: 58px 0 11px 0;
   float: right;
 }
@@ -58,7 +58,7 @@ a{
   float: right;
   display: inline-block;
   list-style: none;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 80px;
 }
 
 li > a{
@@ -101,18 +101,18 @@ li > a:hover::after{
 
 /* collage example container style */
 #collage-excont{
-  width: 54%;
+  width: 50%;
   float: left;
 }
 
 /* image style */
 #ex-collage{
-  width: 990px;
+  width: 900px;
 }
 
 /* header container style */
 #hello{
-  width: 46%;
+  width: 50%;
   float: right;
   color: #eaf8bf;
   font-family: 'Mulish', sans-serif;
@@ -131,12 +131,12 @@ li > a:hover::after{
 
 /* hook h1 style */
 h1{
-  font-size: 3.4rem;
+  font-size: calc(2em + 2vw);
 }
 
 /* extra h2 style */
 h2{
-  font-size: 2.2rem;
+  font-size: calc(1.1em + 1.1vw);
 }
 
 /* start button style */
@@ -169,6 +169,7 @@ h2{
   font-family: 'Mulish', sans-serif;
   font-size: 1.4rem;
   align-items: center;
+  text-align: center;
 }
 
 /* number container style */
@@ -205,7 +206,7 @@ h2{
 }
 
 /* each user grid item */
-#ugriditem{
+.ugriditem{
   height: 174px;
   box-shadow: 15px 15px 22px -4px #0d0106;
 }
@@ -230,7 +231,7 @@ h2{
 
 /* search section container */
 #searchsection{
-  margin: 50px auto 0 auto;
+  margin: 60px auto 0 auto;
   width: 1030px;
   display: flex;
   height: 80px;
@@ -404,4 +405,202 @@ footer{
 /* footer a style */
 footer a{
   color: #eca400;
+}
+
+
+
+/* responsiveness */
+@media (max-width: 1800px){
+  #collage-excont{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 25px 0 0;
+  }
+
+  #ex-collage{
+    width: 650px;
+    margin: 25px 0 25px 0;
+  }
+
+  /* header container style */
+  #hello{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 0;
+  }
+
+  /* hook container style + cta button container style */
+  #hook{
+    margin: 0 0 10px 0;
+  }
+
+  /* extra container style */
+  #extra{
+    margin: 0px 0 0 0px;
+  }
+
+  #collcont-btn{
+    margin: 25px 0 25px 0;
+  }
+
+  /* instructions container style */
+  #instr-cont{
+    width: 100%;
+    margin: 685px 0 0 0;
+    grid-column-gap: 10px;
+  }
+
+  /* number container style */
+  .num{
+    display: none;
+  } 
+}
+
+@media (max-width: 1200px){
+  #nav-links > li > a{
+    display: none;
+  }
+
+  #ex-collage{
+    width: 685px;
+  }
+
+  #usergrid, #searchgrid{
+  grid-template-columns: repeat(4, 174px);
+  width: 900px;
+  } 
+  
+  .ugriditem:nth-last-child(2){
+    grid-column-start: 2;
+  }
+
+  #searchsection{
+    width: 900px;
+  }
+
+  #resetbutn{
+    width: 900px;
+  }
+}
+
+@media (max-width: 992px){
+  #usergrid, #searchgrid{
+    grid-template-columns: repeat(3, 174px);
+    width: 700px;
+  } 
+
+  .ugriditem:nth-last-child(n){
+    grid-column-start: auto;
+  }
+
+  .ugriditem:nth-last-child(1){
+    grid-column-start: 2;
+  }
+
+  #searchsection{
+    width: 700px;
+  }
+
+  #resetbutn{
+    width: 700px;
+  }
+
+  #modal-content{
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px){
+  #ex-collage{
+    width: 450px;
+  }
+
+  #usergrid, #searchgrid{
+    grid-template-columns: repeat(2, 174px);
+    width: 440px;
+  } 
+
+  #searchsection{
+    width: 440px;
+  }
+
+  #resetbutn{
+    width: 440px;
+  }
+
+  #modal-content{
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 480px){
+  body{
+    width: 98%;
+  }
+
+  #albu-logo{
+    width: 200px;
+    margin: 20px 0 0 0;
+  }
+
+  #signin-btn{
+    font-size: 25px;
+  }
+
+  #ex-collage{
+    width: 390px;
+  }
+
+  #instr-cont{
+    margin: 540px 0 0 0;
+  }
+
+  #usergrid, #searchgrid{
+    grid-template-columns: repeat(2, 174px);
+    width: 390px;
+  } 
+
+  #searchsection{
+    width: 390px;
+  }
+
+  #resetbutn{
+    width: 390px;
+  }
+
+  /* hook h1 style */
+  h1{
+    font-size: calc(1.6em + 2vw);
+    margin: 0 5px 0 5px;
+  }
+
+  /* extra h2 style */
+  h2{
+    font-size: calc(.8em + 1.1vw);
+    margin: 0 15px 0 15px;
+  }
+
+  /* start button style */
+  #coll-btn{
+    font-size: 1.2rem;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .step{
+    font-size: 1rem;
+  }
+
+  #aboutimg{
+    width: 140px;
+  }
+
+  #abt-excerpt-cont{
+    font-size: 1rem;
+  }
+
+  #modal-content{
+    width: 70%;
+  }
 }

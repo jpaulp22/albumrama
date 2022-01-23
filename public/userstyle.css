@@ -131,3 +131,65 @@ p > a:visited{
   text-align: center;
   padding: 50px 0 50px 0;
 }
+
+/* responsiveness */
+
+
+@media (max-width: 1200px){
+  #usergrid{
+  grid-template-columns: repeat(4, 174px);
+  width: 900px;
+  } 
+  
+  .ugriditem:nth-last-child(2){
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 992px){
+  #usergrid{
+    grid-template-columns: repeat(3, 174px);
+    width: 700px;
+  } 
+
+  .ugriditem:nth-last-child(n){
+    grid-column-start: auto;
+  }
+
+  .ugriditem:nth-last-child(1){
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 768px){
+  #albu-logo{
+    width: 200px;
+    margin: 20px 0 0 0;
+  }
+
+  #usergrid{
+    grid-template-columns: repeat(2, 174px);
+    width: 440px;
+  } 
+
+  #myaccount-btn{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px){
+
+  #usergrid{
+    width: 390px;
+  } 
+
+  /* hook h1 style */
+  h1{
+    font-size: calc(1.6em + 2vw);
+    margin: 0 5px 0 5px;
+  }
+
+  #logout{
+    font-size: 1.5rem;
+  }
+}
